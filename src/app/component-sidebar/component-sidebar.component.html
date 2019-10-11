@@ -1,0 +1,27 @@
+<div class="wrapper" *ngIf='isShow'>
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <!-- <h3>Learning Tool </h3> -->
+                <h6>Add Components</h6>
+                <i class="fa fa-times" aria-hidden="true" (click)='hideComponentbar()' ></i>
+            </div>
+      
+          
+      
+            <ul class="list-unstyled CTAs">
+               
+                  
+            </ul>
+           
+        </nav>
+       
+        <!-- Page Content Holder -->
+        <main  class="page-content">
+            <!-- <app-breadcrumbs></app-breadcrumbs> -->
+            <router-outlet></router-outlet>
+        </main>
+      
+      
+        
+      </div>

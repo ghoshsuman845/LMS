@@ -1,0 +1,101 @@
+<div class="container contact">
+        <div class="header">
+                <h6>General</h6>
+        </div>
+        
+        <form #myBlockForm="ngForm" (ngSubmit)="SubmitItem(myBlockForm)" class="myBlockForm">
+                <div class="col-lg" >
+                <div class="contact-form">
+                        <div class="form-group">
+                                <label class="control-label col-sm-2" for="title">Preview Image</label>
+                                <div class="col-sm-10">          
+                                  <input type="text" class="form-control" id="title" name="title" ngModel>
+                                </div>
+                         </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="title">Title</label>
+                      <div class="col-sm-10">          
+                        <input type="text" class="form-control" id="title" name="title" ngModel>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="dtitle">Display Title</label>
+                      <div class="col-sm-10">          
+                        <input type="text" class="form-control" id="dtitle" name="dtitle" ngModel>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                            <label class="control-label col-sm-2" for="blink">Description</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" id="blink"  name="blink" ngModel>
+                            </div>
+                     </div>
+                    
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="body">Body</label>
+                      <div class="col-sm-10">
+                            
+                            <p-editor [style]="{'height':'250px'}" ngModel></p-editor>
+                           
+                      </div>
+                    </div>
+                    <div class="form-group">
+                            <label class="control-label col-sm-2" for="blink">Tags</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" id="blink"  name="blink" ngModel>
+                            </div>
+                            
+                     </div>
+                     <div class="form-group">
+                            
+                            <div class="col-sm-10 checkbox">
+                               <input type="checkbox" style="width: 1.5%;" class="form-control" id="checkbox"  name="checkbox" ngModel> Share will all users
+                            </div>
+                     </div>
+                     <div class="form-group">
+                            <label class="control-label col-sm-2" for="blink">Share with specific users</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" id="blink"  name="blink" ngModel>
+                            </div>
+                            
+                     </div>
+                     <div class="header">
+                            <h6 style="padding: 14px 19px;margin-top: 0%;">Menu Lock Type</h6>
+                    </div>
+                    <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             Lock type
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Custom</a>
+                              <a class="dropdown-item" href="#">Lock last</a>
+                              <a class="dropdown-item" href="#">Unlock First</a>
+                              <a class="dropdown-item" href="#">Sequential</a>
+
+                            </div>
+                    </div>
+                    
+                   
+                     <div class="header">
+                            <h6 style="padding: 14px 19px;margin-top: 0%;">Custom CSS</h6>
+                    </div>
+                    <div class="form-group">
+                            <div class="col-sm-10">
+                            <textarea  class="form-control" id="text-area"  name="text-area" ngModel rows="3"></textarea>   
+                            </div>
+                            
+                    </div>
+                    <div class="form-group">        
+                      <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default" >Submit</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+        <div>
+               
+        
+    </div>
+    
